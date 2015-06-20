@@ -1,0 +1,76 @@
+body{
+  font-family: Raleway,sans-serif;
+}
+
+.a11y_hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+img.header_logo{
+  margin: 20px 0;
+}
+
+/* ===================
+    ALL: Grey Blue Theme
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid #335087;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #335087;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #efefef;
+}
+
+.title {
+    color: #004b9d;
+}
+
+nav a{
+  background-color: #ddd;
+  color: #004b9d;
+}
+
+/* ============================
+    Bootstrap-Table Overrides 
+   ============================ */
+
+.fixed-table-container{
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+
+#results_table{
+  table-layout: fixed;
+}
+
+#results_table td{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ============================
+    Bootstrap Form Overrides 
+   ============================ */
+
+.form-inline .form-group{
+  margin-right: 10px;
+}
+
+.form-inline .form-group label{
+  margin-right: 4px;
+}

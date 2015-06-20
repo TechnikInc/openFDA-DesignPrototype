@@ -1,0 +1,143 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>openFDA by Technik</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="./favicon.ico">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.css">
+        <link rel="stylesheet" href="css/openfda.css">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table-all.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          renderResultsTable();
+        });
+
+        var baseSearchURL = "https://api.fda.gov/drug/label.json?";
+        var limit = 10;
+        var brandSearchTerm = "Advil";
+        var results;
+
+        JSON.flatten = function(data) {
+            var result = {};
+            function recurse (cur, prop) {
+                if (Object(cur) !== cur) {
+                    result[prop] = cur;
+                } else if (Array.isArray(cur)) {
+                     for(var i=0, l=cur.length; i<l; i++)
+                         recurse(cur[i], prop + "[" + i + "]");
+                    if (l == 0)
+                        result[prop] = [];
+                } else {
+                    var isEmpty = true;
+                    for (var p in cur) {
+                        isEmpty = false;
+                        recurse(cur[p], prop ? prop+"."+p : p);
+                    }
+                    if (isEmpty && prop)
+                        result[prop] = {};
+                }
+            }
+            recurse(data, "");
+            return result;
+        }
+
+        function updateSearch(){
+            brandSearchTerm = $("#search_brand").val();
+            executeAPIQuery(function(){
+                $('#results_table').bootstrapTable("load", results);
+            });
+        }
+
+        function executeAPIQuery(render){
+          results = [];
+          var searchURL = baseSearchURL;
+          searchURL += ("limit=" + limit);
+          searchURL += ("&search=brand_name:" + brandSearchTerm.replace(/ /g, "+"));
+          $.getJSON(searchURL,{
+          })
+            .done(function(data){
+              $.each(data.results, function(i, result){
+                results.push(JSON.flatten(result));
+              });
+              render();
+            });
+        }
+
+        function renderResultsTable(){
+            executeAPIQuery(function(){
+                $('#results_table').bootstrapTable({
+                    columns: [{
+                        field: 'openfda.brand_name[0]',
+                        title: 'Brand Name'
+                    },{                        
+                        field: 'openfda.generic_name[0]',
+                        title: 'Generic Name'
+                    },{                        
+                        field: 'openfda.manufacturer_name[0]',
+                        title: 'Manufacturer'
+                    }],
+                    data: results
+                });
+            })
+        }
+
+        </script>
+    </head>
+    <body>
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title a11y_hidden">h1.title</h1>
+                <img src="./img/l_openFDA.png" class="header_logo" alt="OpenFDA Logo" />
+                <!--nav>
+                    <ul>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                    </ul>
+                </nav-->
+            </header>
+        </div>
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+                <div class="panel panel-default">
+                  <!-- Default panel contents -->
+                  <div class="panel-heading">Search for drugs</div>
+                  <div class="panel-body">
+                    <form class="form-inline" onsubmit="updateSearch(); return false;">
+                      <div class="form-group">
+                        <label class="sr-only" for="search_brand">Brand Name</label>
+                        <input type="text" class="form-control" id="search_brand" placeholder="Brand name (e.g. Advil)" value="Advil">
+                      </div>
+                      <button type="submit" class="btn btn-default">Search</button>
+                    </form>
+                  </div>
+
+                  <!-- Table -->
+                  <table class="table" id="results_table"></table>
+                </div>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>footer</h3>
+            </footer>
+        </div>
+
+    </body>
+</html>
