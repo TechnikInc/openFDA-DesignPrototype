@@ -6,6 +6,7 @@
         var openFDAKey = "uN2mlhVgIcwgvh8FrfmpT5f7U65RGxnrtrZCxInc"; /* API key for openFDA queries */
         var bingKey = "QF9SCR10hDCGhqhkCv3XV54bsoSEIn2bEXEsec4z7Bs="; /* API key for Windows Azure Marketplace Bing Image Search queries */
         var imageUrls = [];
+        var imgRenderDelay = 1000;
         
         var mobile = (/iPhone|iPod|iPad|Android|BlackBerry/).test(navigator.userAgent); /* check for mobile user agents to allow differentiated JS, not just responsive CSS */
 
@@ -116,10 +117,11 @@
           $(".details_body").html(content);
           bingImageSearch(row["openfda.brand_name[0]"]);
           var asynchRenderImage = window.setTimeout(function(){ /* render the thumbnail images after the detail pane has been drawn */
+            /*console.log(imageUrls);*/
             $.each(imageUrls,function(index,item){
               $(".details_body .img_gallery > div:eq("+index+")").prepend("<img alt='Product Image' src='" + item + "' />");
             });}
-            , 1000);
+            , imgRenderDelay);
         }
 
         function generateField(label,text){
