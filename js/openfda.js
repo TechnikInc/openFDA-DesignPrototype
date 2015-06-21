@@ -86,11 +86,12 @@
         }
 
         function renderDetails(row){
-          console.log(row);
+          /*console.log(row);*/
           var content = "<h3>" + row["openfda.brand_name[0]"] + "</h3>";
           content += "<p class='generic'>" + row["openfda.generic_name[0]"] + "</p>";
           content += "<div class='img_gallery'><div></div><div></div><div></div><div></div><div></div></div>";
-          content += "<div class='panel panel-danger'><div class='panel-heading'>WARNING</div><div class='panel-body'>" + row["warnings[0]"] + "</div></div>";
+          content += "<div class='panel panel-danger'><div class='panel-heading'>WARNINGS</div><div class='panel-body'>" + row["warnings[0]"] + "</div></div>";
+          content += generateField("Purpose",row["purpose[0]"]);
           content += generateField("Indications & Usage",row["indications_and_usage[0]"]);
           content += generateField("Dosage & Administration",row["dosage_and_administration[0]"]);
           $(".details_body").html(content);
@@ -99,7 +100,7 @@
             $.each(imageUrls,function(index,item){
               $(".details_body .img_gallery > div:eq("+index+")").prepend("<img alt='Product Image' src='" + item + "' />");
             });}
-            , 750);
+            , 1000);
         }
 
         function generateField(label,text){

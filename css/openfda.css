@@ -62,6 +62,19 @@ nav a{
     Main Layout
    =================== */
 
+@media only screen and (min-width: 480px){
+  div.side_by_side{
+    display: block;
+  }
+
+  div.side_by_side > div{
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+
 div.side_by_side{
   display: table;
   width: 100%;
@@ -76,6 +89,8 @@ div.side_by_side > div{
 div.side_by_side > div.detail{
   width: 440px;
   padding-left: 20px;
+}
+
 }
 
 div.details_body{
