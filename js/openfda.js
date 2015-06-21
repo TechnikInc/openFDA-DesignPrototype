@@ -53,7 +53,10 @@
                 results.push(JSON.flatten(result));
               });
               render();
-            });
+            })
+            .error(function(){
+                render();
+            })
         }
 
         function renderResultsTable(){
