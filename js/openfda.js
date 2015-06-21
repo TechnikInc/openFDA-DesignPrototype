@@ -6,6 +6,8 @@
         var openFDAKey = "uN2mlhVgIcwgvh8FrfmpT5f7U65RGxnrtrZCxInc";
         var bingKey = "QF9SCR10hDCGhqhkCv3XV54bsoSEIn2bEXEsec4z7Bs=";
         var imageUrls = [];
+        
+        var mobile = (/iPhone|iPod|iPad|Android|BlackBerry/).test(navigator.userAgent);
 
         JSON.flatten = function(data){
             var result = {};
@@ -55,6 +57,8 @@
         }
 
         function renderResultsTable(){
+            var tableHeight = 400;
+            if(mobile)tableHeight = 200;
             executeAPIQuery(function(){
                 $('#results_table').bootstrapTable({
                     columns: [{
@@ -70,7 +74,7 @@
                         title: 'Manufacturer'
                     }],
                     data: results,
-                    height: 400,
+                    height: tableHeight,
                     clickToSelect: true
                 });
             })

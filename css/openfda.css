@@ -167,3 +167,15 @@ div.details_body .img_gallery > div img{
 .form-inline .form-group label{
   margin-right: 4px;
 }
+
+.form-inline .form-control{
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+
+.form-inline .form-group{
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
