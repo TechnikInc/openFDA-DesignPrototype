@@ -126,6 +126,7 @@ div.details_body .img_gallery > div{
 
 div.details_body .img_gallery > div img{
   height: 100px;
+  vertical-align: top;
 }
 
 /* ============================
