@@ -21,80 +21,15 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table-all.min.js"></script>
+        <script src="js/jquery.base64.min.js"></script>
+        <script src="js/jquery.bingsearch.js"></script>
+        <script src="js/openfda.js"></script>
         <script>
         $(document).ready(function(){
           renderResultsTable();
+          $("#search_brand").focus();
+          $("#search_brand").select();
         });
-
-        var baseSearchURL = "https://api.fda.gov/drug/label.json?";
-        var limit = 10;
-        var brandSearchTerm = "Advil";
-        var results;
-
-        JSON.flatten = function(data) {
-            var result = {};
-            function recurse (cur, prop) {
-                if (Object(cur) !== cur) {
-                    result[prop] = cur;
-                } else if (Array.isArray(cur)) {
-                     for(var i=0, l=cur.length; i<l; i++)
-                         recurse(cur[i], prop + "[" + i + "]");
-                    if (l == 0)
-                        result[prop] = [];
-                } else {
-                    var isEmpty = true;
-                    for (var p in cur) {
-                        isEmpty = false;
-                        recurse(cur[p], prop ? prop+"."+p : p);
-                    }
-                    if (isEmpty && prop)
-                        result[prop] = {};
-                }
-            }
-            recurse(data, "");
-            return result;
-        }
-
-        function updateSearch(){
-            brandSearchTerm = $("#search_brand").val();
-            executeAPIQuery(function(){
-                $('#results_table').bootstrapTable("load", results);
-            });
-        }
-
-        function executeAPIQuery(render){
-          results = [];
-          var searchURL = baseSearchURL;
-          searchURL += ("limit=" + limit);
-          searchURL += ("&search=brand_name:" + brandSearchTerm.replace(/ /g, "+"));
-          $.getJSON(searchURL,{
-          })
-            .done(function(data){
-              $.each(data.results, function(i, result){
-                results.push(JSON.flatten(result));
-              });
-              render();
-            });
-        }
-
-        function renderResultsTable(){
-            executeAPIQuery(function(){
-                $('#results_table').bootstrapTable({
-                    columns: [{
-                        field: 'openfda.brand_name[0]',
-                        title: 'Brand Name'
-                    },{                        
-                        field: 'openfda.generic_name[0]',
-                        title: 'Generic Name'
-                    },{                        
-                        field: 'openfda.manufacturer_name[0]',
-                        title: 'Manufacturer'
-                    }],
-                    data: results
-                });
-            })
-        }
-
         </script>
     </head>
     <body>
@@ -113,29 +48,49 @@
         </div>
         <div class="main-container">
             <div class="main wrapper clearfix">
-                <div class="panel panel-default">
-                  <!-- Default panel contents -->
-                  <div class="panel-heading">Search for drugs</div>
-                  <div class="panel-body">
-                    <form class="form-inline" onsubmit="updateSearch(); return false;">
-                      <div class="form-group">
-                        <label class="sr-only" for="search_brand">Brand Name</label>
-                        <input type="text" class="form-control" id="search_brand" placeholder="Brand name (e.g. Advil)" value="Advil">
-                      </div>
-                      <button type="submit" class="btn btn-default">Search</button>
-                    </form>
-                  </div>
+                <div class="side_by_side">
+                    <div>
+                        <div class="panel panel-default">
+                          <!-- Default panel contents -->
+                          <div class="panel-heading">Search for drugs</div>
+                          <div class="panel-body">
+                            <form class="form-inline" onsubmit="updateSearch(); return false;">
+                              <div class="form-group">
+                                <label class="sr-only" for="search_brand">Brand Name</label>
+                                <input type="text" class="form-control" id="search_brand" placeholder="Brand name (e.g. Advil)" value="Advil">
+                              </div>
+                              <button type="submit" class="btn btn-default">Search</button>
+                            </form>
+                          </div>
 
-                  <!-- Table -->
-                  <table class="table" id="results_table"></table>
+                          <!-- Table -->
+                          <table class="table" id="results_table"></table>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="panel panel-default">
+                          <!-- Default panel contents -->
+                          <div class="panel-heading">Drug details</div>
+                          <div class="details_body">
+                          </div>
+                        </div>
+                    </div>
                 </div>
-
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
         <div class="footer-container">
             <footer class="wrapper">
-                <h3>footer</h3>
+                <img src="./img/technik_logo.png" alt="Technik Logo" class="technik_logo" />
+                <p>
+                  Designed & developed by <a href="http://www.technikinc.com" target="_blank">Technik, Inc.</a>
+                </p>
+                <p>
+                    12950 Worldgate Drive, Suite 230, Herndon, VA 20170
+                </p>
+                <p>
+                    Data from <a href="https://open.fda.gov" target="_blank">OpenFDA</a>
+                </p>
             </footer>
         </div>
 

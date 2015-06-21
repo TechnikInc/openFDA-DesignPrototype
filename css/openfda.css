@@ -1,5 +1,6 @@
 body{
   font-family: Raleway,sans-serif;
+  overflow-y: scroll; /* prevent scrollbar jumping */
 }
 
 .a11y_hidden {
@@ -13,6 +14,20 @@ body{
 
 img.header_logo{
   margin: 20px 0;
+}
+
+img.technik_logo{
+  height: 30px;
+}
+
+footer p{
+  color: #444;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+footer p a, footer p a:hover, footer p a:focus{
+  color: #00a8e4;
 }
 
 /* ===================
@@ -43,6 +58,61 @@ nav a{
   color: #004b9d;
 }
 
+/* ===================
+    Main Layout
+   =================== */
+
+div.side_by_side{
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+div.side_by_side > div{
+  display: table-cell;
+  vertical-align: top;
+}
+
+div.side_by_side > div.detail{
+  width: 440px;
+  padding-left: 20px;
+}
+
+div.details_body{
+  height: 464px;
+  padding: 15px;
+  overflow-y: scroll;
+}
+
+div.details_body h3{
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+
+div.details_body p.generic{
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
+}
+
+div.details_body .img_gallery{
+  margin: 10px 0;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+div.details_body .img_gallery > div{
+  display: inline-block;
+  height: 100px;
+  min-width: 100px;
+  background-color: #eee;
+  margin-right: 10px;
+}
+
+div.details_body .img_gallery > div img{
+  height: 100px;
+}
+
 /* ============================
     Bootstrap-Table Overrides 
    ============================ */
@@ -61,6 +131,14 @@ nav a{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+#results_table td:hover{
+  cursor: pointer;
+}
+
+.bootstrap-table .table > thead > tr > th{
+  border-bottom: none;
 }
 
 /* ============================
