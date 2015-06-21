@@ -1,15 +1,15 @@
 
         var baseSearchURL = "https://api.fda.gov/drug/label.json?";
         var limit = 100;
-        var brandSearchTerm = "Advil";
+        var brandSearchTerm = "Advil"; /* default search term */
         var results;
-        var openFDAKey = "uN2mlhVgIcwgvh8FrfmpT5f7U65RGxnrtrZCxInc";
-        var bingKey = "QF9SCR10hDCGhqhkCv3XV54bsoSEIn2bEXEsec4z7Bs=";
+        var openFDAKey = "uN2mlhVgIcwgvh8FrfmpT5f7U65RGxnrtrZCxInc"; /* API key for openFDA queries */
+        var bingKey = "QF9SCR10hDCGhqhkCv3XV54bsoSEIn2bEXEsec4z7Bs="; /* API key for Windows Azure Marketplace Bing Image Search queries */
         var imageUrls = [];
         
-        var mobile = (/iPhone|iPod|iPad|Android|BlackBerry/).test(navigator.userAgent);
+        var mobile = (/iPhone|iPod|iPad|Android|BlackBerry/).test(navigator.userAgent); /* check for mobile user agents to allow differentiated JS, not just responsive CSS */
 
-        JSON.flatten = function(data){
+        JSON.flatten = function(data){ /* utility for flattening openFDA response JSON since bootstrap-table doesn't support nested structures; code from http://stackoverflow.com/q/19098797 */
             var result = {};
             function recurse (cur, prop){
                 if (Object(cur) !== cur){
@@ -45,7 +45,7 @@
           var searchURL = baseSearchURL;
           searchURL += ("api_key=" + openFDAKey);
           searchURL += ("&limit=" + limit);
-          searchURL += ("&search=brand_name:" + "\"" + brandSearchTerm.replace(/ /g, "+") + "\"");
+          searchURL += ("&search=brand_name:" + "\"" + brandSearchTerm.replace(/ /g, "+") + "\""); /* replace any spaces in the search term with "+" */
           $.getJSON(searchURL,{
           })
             .done(function(data){
@@ -53,38 +53,53 @@
                 results.push(JSON.flatten(result));
               });
               render();
-            });
+            })
+            .error(function(){
+                render();
+            })
         }
 
         function renderResultsTable(){
-            var tableHeight = 400;
-            if(mobile)tableHeight = 200;
             executeAPIQuery(function(){
-                $('#results_table').bootstrapTable({
-                    columns: [{
-                        radio: true,
-                    },{
-                        field: 'openfda.brand_name[0]',
-                        title: 'Brand Name'
-                    },{                        
-                        field: 'openfda.generic_name[0]',
-                        title: 'Generic Name'
-                    },{                        
-                        field: 'openfda.manufacturer_name[0]',
-                        title: 'Manufacturer'
-                    }],
-                    data: results,
-                    height: tableHeight,
-                    clickToSelect: true
-                });
+                if(mobile){ /* for mobile user agents only show 5 search results and turn off frozen headers/scrolling */
+                    var mobileData = $(results).slice(0,5);
+                    $('#results_table').bootstrapTable({
+                        columns: [{
+                            radio: true,
+                        },{
+                            field: 'openfda.brand_name[0]',
+                            title: 'Brand Name'
+                        },{                        
+                            field: 'openfda.generic_name[0]',
+                            title: 'Generic Name'
+                        }],
+                        data: mobileData,
+                        clickToSelect: true
+                    });
+                }else{
+                    $('#results_table').bootstrapTable({
+                        columns: [{
+                            radio: true,
+                        },{
+                            field: 'openfda.brand_name[0]',
+                            title: 'Brand Name'
+                        },{                        
+                            field: 'openfda.generic_name[0]',
+                            title: 'Generic Name'
+                        },{                        
+                            field: 'openfda.manufacturer_name[0]',
+                            title: 'Manufacturer'
+                        }],
+                        data: results,
+                        height: 400,
+                        clickToSelect: true
+                    });
+                }
             })
             $('#results_table').on('check.bs.table', function (e, row) {
                 renderDetails(row);
             });
-            /*$('#results_table').on('click-row.bs.table', function (e, row, $element) {
-                renderDetails(row);
-            });*/
-            var autoCheckFirst = window.setTimeout(function(){
+            var autoCheckFirst = window.setTimeout(function(){ /* automatically select the first item in the default search results on page load */
               $('#results_table').bootstrapTable("check",0);
             },450) 
         }
@@ -100,7 +115,7 @@
           content += generateField("Dosage & Administration",row["dosage_and_administration[0]"]);
           $(".details_body").html(content);
           bingImageSearch(row["openfda.brand_name[0]"]);
-          var asynchRenderImage = window.setTimeout(function(){
+          var asynchRenderImage = window.setTimeout(function(){ /* render the thumbnail images after the detail pane has been drawn */
             $.each(imageUrls,function(index,item){
               $(".details_body .img_gallery > div:eq("+index+")").prepend("<img alt='Product Image' src='" + item + "' />");
             });}
