@@ -57,26 +57,41 @@
         }
 
         function renderResultsTable(){
-            var tableHeight = 400;
-            if(mobile)tableHeight = 200;
             executeAPIQuery(function(){
-                $('#results_table').bootstrapTable({
-                    columns: [{
-                        radio: true,
-                    },{
-                        field: 'openfda.brand_name[0]',
-                        title: 'Brand Name'
-                    },{                        
-                        field: 'openfda.generic_name[0]',
-                        title: 'Generic Name'
-                    },{                        
-                        field: 'openfda.manufacturer_name[0]',
-                        title: 'Manufacturer'
-                    }],
-                    data: results,
-                    height: tableHeight,
-                    clickToSelect: true
-                });
+                if(mobile){
+                    var mobileData = $(results).slice(0,5);
+                    $('#results_table').bootstrapTable({
+                        columns: [{
+                            radio: true,
+                        },{
+                            field: 'openfda.brand_name[0]',
+                            title: 'Brand Name'
+                        },{                        
+                            field: 'openfda.generic_name[0]',
+                            title: 'Generic Name'
+                        }],
+                        data: mobileData,
+                        clickToSelect: true
+                    });
+                }else{
+                    $('#results_table').bootstrapTable({
+                        columns: [{
+                            radio: true,
+                        },{
+                            field: 'openfda.brand_name[0]',
+                            title: 'Brand Name'
+                        },{                        
+                            field: 'openfda.generic_name[0]',
+                            title: 'Generic Name'
+                        },{                        
+                            field: 'openfda.manufacturer_name[0]',
+                            title: 'Manufacturer'
+                        }],
+                        data: results,
+                        height: 400,
+                        clickToSelect: true
+                    });
+                }
             })
             $('#results_table').on('check.bs.table', function (e, row) {
                 renderDetails(row);
