@@ -35,6 +35,7 @@
         }
 
         function updateSearch(){
+            clearDetails();
             brandSearchTerm = $("#search_brand").val();
             executeAPIQuery(function(){
                 $('#results_table').bootstrapTable("load", results);
@@ -103,6 +104,11 @@
             var autoCheckFirst = window.setTimeout(function(){ /* automatically select the first item in the default search results on page load */
               $('#results_table').bootstrapTable("check",0);
             },450) 
+        }
+
+        function clearDetails(){
+           var content = "<div class='empty_msg'>Select a drug to view its details</div>";
+           $(".details_body").html(content);
         }
 
         function renderDetails(row){

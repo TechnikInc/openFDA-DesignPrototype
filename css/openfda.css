@@ -99,6 +99,14 @@ div.details_body{
   overflow-y: scroll;
 }
 
+div.details_body div.empty_msg{
+  font-size: 12px;
+  font-style: italic;
+  color: #777;
+  text-align: center;
+  margin-top: 200px;
+}
+
 div.details_body h3{
   margin: 0 0 6px;
   font-weight: 600;
