@@ -22,3 +22,6 @@ In addition to [OpenFDA APIs](https://open.fda.gov/api/reference/), a number of 
 * [Bootstrap](http://getbootstrap.com/) for basic web components
 * [Bootstrap-Table](https://github.com/wenzhixin/bootstrap-table) for table generation from JSON data and frozen table headers
 * [jQuery Bing Search](http://cbenard.github.io/jquery-bingsearch/) for authenticated Bing image searches using the Windows Azure Marketplace Bing Search API
+
+### Prototype deployment
+To deploy a copy of this prototype, simply clone this repository or download the ZIP file and launch index.html in a web browser
