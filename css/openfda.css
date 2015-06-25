@@ -20,6 +20,15 @@ img.technik_logo{
   height: 30px;
 }
 
+header h1{
+  display: inline;
+  margin: 0 0 0 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #025493;
+  vertical-align: text-top;
+}
+
 footer p{
   color: #444;
   font-size: 14px;

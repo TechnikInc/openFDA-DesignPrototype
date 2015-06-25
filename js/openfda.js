@@ -6,7 +6,7 @@
         var openFDAKey = "uN2mlhVgIcwgvh8FrfmpT5f7U65RGxnrtrZCxInc"; /* API key for openFDA queries */
         var bingKey = "QF9SCR10hDCGhqhkCv3XV54bsoSEIn2bEXEsec4z7Bs="; /* API key for Windows Azure Marketplace Bing Image Search queries */
         var imageUrls = [];
-        var imgRenderDelay = 1000;
+        var imgRenderDelay = 800;
         
         var mobile = (/iPhone|iPod|iPad|Android|BlackBerry/).test(navigator.userAgent); /* check for mobile user agents to allow differentiated JS, not just responsive CSS */
 
@@ -103,7 +103,7 @@
             });
             var autoCheckFirst = window.setTimeout(function(){ /* automatically select the first item in the default search results on page load */
               $('#results_table').bootstrapTable("check",0);
-            },450) 
+            },750) 
         }
 
         function clearDetails(){
