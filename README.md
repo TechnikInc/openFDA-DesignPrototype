@@ -6,7 +6,7 @@ This tool allows consumers to search for OTC and prescription drug facts via a s
 
 ## Approach used to create Pool One Design prototype
 
-### U.S. Digital Services Playbook Requirements
+### U.S. Digital Services Playbook requirements
 
 # Assigned one leader, gave that person authority and responsibility, and held that person accountable for the quality of the prototype submitted
 #* Ms. Alexa Tsui was the assigned leader (Product Manager) with authority, responsibility and accountability for the quality of the prototype submitted
