@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/TechnikInc/openFDA-DesignPrototype.png?label=ready&title=Ready)](https://waffle.io/TechnikInc/openFDA-DesignPrototype)
 # OpenFDA Drug Search by Technik Inc.
 
 [View the prototype](http://TechnikInc.github.io/openFDA-DesignPrototype)
