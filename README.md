@@ -1,7 +1,7 @@
 [![Stories in Ready](https://badge.waffle.io/TechnikInc/openFDA-DesignPrototype.png?label=ready&title=Ready)](https://waffle.io/TechnikInc/openFDA-DesignPrototype)
 # OpenFDA Drug Search by Technik Inc. 
 
-[View the prototype](http://TechnikInc.github.io/openFDA-DesignPrototype)
+[Click here to view the prototype](http://TechnikInc.github.io/openFDA-DesignPrototype)
 
 This tool allows consumers to search for OTC and prescription drug facts via a simple and intuitive user interface. In addition to detailed drug information provided by OpenFDA APIs, product images from Microsoft's Bing search API are used to facilitate rapid recognition.
 
