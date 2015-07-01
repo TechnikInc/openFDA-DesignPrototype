@@ -15,7 +15,7 @@ b. The Technik openFDA design prototype team consisted of three resources assign
 This rapid development effort project was developed and scaled using agile methodologies. The primary roles as they pertain to our chosen labor categories are as follows: 
 
  - Category 1: Product Manager, responsible for defining and
-   prioritizing the requirements, developing the vision and roadmap and working with Web Designer to optimize our design tools & techniques. 
+   prioritizing the requirements, developing the vision and roadmap and working with Web Designer to optimize our design tools & techniques.
    
  - Category 3: Interaction Designer/User Researcher/Usability Tester,
    responsible for creating artifacts such as usability testing plan,
@@ -44,7 +44,7 @@ f. In addition to openFDA APIs, several open source libraries were used to power
  -  [HTML5   Boilerplate](https://github.com/h5bp/html5-boilerplate) for basic responsive web template 
  - [Bootstrap](http://getbootstrap.com/) for basic web components
  - [Bootstrap-Table](https://github.com/wenzhixin/bootstrap-table) for table generation from JSON data and frozen table headers
- - [jQuery Bing Search](http://cbenard.github.io/jquery-bingsearch/) for authenticated Bing image searches using the Windows Azure Marketplace Bing Search API 
+ - [jQuery Bing Search](http://cbenard.github.io/jquery-bingsearch/) for authenticated Bing image searches using the Windows Azure Marketplace Bing Search API
 
 g. A team of 2 people tested the prototype, validated the acceptance criteria and provided feedback for iteration improvement including enhancement requests. 
 Additionally, an independent group of 5 people not associated the working prototype completed usability tests and provided feedback using a Google questionnaire form by answering 12 questions. (artifact -Technik_18F_SystemUsability_Responses). See artifact in the "evidence folder" in the GitHub repository.
@@ -57,3 +57,4 @@ j. To deploy a copy of this prototype, simply clone this repository or download 
 
 k. The prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge using the MIT free software license.
 
+----------
