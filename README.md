@@ -49,7 +49,13 @@ h. Used an iterative approach, where feedback informed subsequent work or versio
     - An image gallery that displays product images from Microsoft's Bing search API was implemented to facilitate rapid recognition. This enhancement was introduced to address the user requested enhancement. Used GitHub issues, labels and milestones for collaboration.
 
 i. Created a prototype that works on multiple devices, and presents a responsive design
-    - This prototype was tested successfully in Internet Explorer, Chrome and Firefox on Windows, as well as Safari, Chrome and Firefox on Mac OS, and also with Safari on the iPhone and iPad and with Chrome on Android phones and tablets. The prototype uses a responsive layout that reduces the amount of data shown on-screen at a given time on mobile devices.
+    - This prototype was tested successfully in Internet Explorer, Chrome and Firefox on Windows, as well as Safari, Chrome and Firefox on Mac OS, and also with Safari on the iPhone and iPad and with Chrome on Android phones and tablets. The prototype uses a responsive layout that reduces the amount of data shown on-screen at a given time on mobile devices. 
+(artifacts - Technik_18F_Iphone.jpeg, Technik_18F_android.jpeg, Technik_18F_IE.jpeg, Technik_18F_Chrome.jpeg, Technik_18F_Firefox.jpeg)
 
-## Prototype deployment
-To deploy a copy of this prototype, simply clone this repository or download the ZIP file and deploy the project on a web server (e.g. IIS, Apache). Navigate to index.html to use the tool.
+j. Provided suffient documentation to install and run the their prototype on another machine
+To deploy a copy of this prototype, simply clone this repository or download the ZIP file and deploy the project on a web server (e.g. IIS, Apache). Navigate to index.html to use the tool. 
+
+K. Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
+The Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge.
+
+
