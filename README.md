@@ -28,9 +28,11 @@ d. Used at least three "human-centered design" techniques or tools
     - Applied white-boarding and card sorting techniques to identify possible layout and flow approaches. (artifacts-Technik_18F_userstory.docx, Technik_18F_cardeck.jpeg)
     - Used Balsamiq Mockups to create wireframes of web and mobile flows for user review. (artifact-Technik_18F_balsamiq.jpeg)
     - Performed usability testing with rapid iteration of working prototypes, adding and validating enhancements requested by users. (artifact-Technik_18F_testinglog.xls), (artifact-Technik_18F_SystemUsability_Responses.xls)
-6. Created or used a design style guide and/or a pattern library
+
+e. Created or used a design style guide and/or a pattern library
     - Standard, responsive components and layouts from the Bootstrap UI library were used to create the interface
-7. Used at least three modern and open-source frontend or client-side web technologies
+
+f. Used at least three modern and open-source frontend or client-side web technologies
     - [jQuery](https://jquery.com/) for general JavaScript utilities and JSON manipulation
     - [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) for basic, responsive web template
     - [Bootstrap](http://getbootstrap.com/) for basic web components
