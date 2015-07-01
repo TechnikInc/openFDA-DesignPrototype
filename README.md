@@ -15,7 +15,7 @@ b. The Technik openFDA design prototype team consisted of three resources assign
 This rapid development effort project was developed and scaled using agile methodologies. The primary roles as they pertain to our chosen labor categories are as follows: 
 
  - Category 1: Product Manager, responsible for defining and
-   prioritizing the requirements, developing the vision and roadmap and working with Web Designer to optimize our design tools & techniques.
+   prioritizing the requirements, developing the vision and roadmap and working with Web Designer to optimize our design tools & techniques. 
    
  - Category 3: Interaction Designer/User Researcher/Usability Tester,
    responsible for creating artifacts such as usability testing plan,
