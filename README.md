@@ -44,7 +44,7 @@ f. In addition to openFDA APIs, several open source libraries were used to power
  -  [HTML5   Boilerplate](https://github.com/h5bp/html5-boilerplate) for basic responsive web template 
  - [Bootstrap](http://getbootstrap.com/) for basic web components
  - [Bootstrap-Table](https://github.com/wenzhixin/bootstrap-table) for table generation from JSON data and frozen table headers
- - [jQuery Bing Search](http://cbenard.github.io/jquery-bingsearch/) for authenticated Bing image searches using the Windows Azure Marketplace Bing Search API
+ - [jQuery Bing Search](http://cbenard.github.io/jquery-bingsearch/) for authenticated Bing image searches using the Windows Azure Marketplace Bing Search API 
 
 g. A team of 2 people tested the prototype, validated the acceptance criteria and provided feedback for iteration improvement including enhancement requests. 
 Additionally, an independent group of 5 people not associated the working prototype completed usability tests and provided feedback using a Google questionnaire form by answering 12 questions. (artifact -Technik_18F_SystemUsability_Responses). See artifact in the "evidence folder" in the GitHub repository.
