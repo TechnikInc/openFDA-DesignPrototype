@@ -1,7 +1,7 @@
 [![Stories in Ready](https://badge.waffle.io/TechnikInc/openFDA-DesignPrototype.png?label=ready&title=Ready)](https://waffle.io/TechnikInc/openFDA-DesignPrototype)
 # OpenFDA Drug Search by Technik Inc. 
 
-[Click here to view the prototype](http://TechnikInc.github.io/openFDA-DesignPrototype) 
+[Click here to view the prototype](http://TechnikInc.github.io/openFDA-DesignPrototype)
 
 This tool allows consumers to search for OTC and prescription drug facts via a simple and intuitive user interface. In addition to detailed drug information provided by OpenFDA APIs, product images from Microsoft's Bing search API are used to facilitate rapid recognition.
 
@@ -53,7 +53,7 @@ h. Feedback from the tests led to subsequent work and an updated prototype. (Ex.
 
 i. This prototype was tested successfully in Windows (Internet Explorer, Chrome, Firefox), Mac OS (Safari, Chrome, Firefox), and on the iPhone and iPad (Safari) and on Android phones and tablets (Chrome). The prototype uses a responsive layout that reduces the amount of data shown on-screen at a given time on mobile devices. (artifacts - Technik_18F_Iphone.jpeg, Technik_18F_android.jpeg, Technik_18F_IE.jpeg, Technik_18F_Chrome.jpeg, Technik_18F_Firefox.jpeg)
 
-j. To deploy a copy of this prototype, simply clone this repository or download the ZIP file and deploy the project on a web server (e.g. IIS, Apache). Navigate to index.html to use the prototype.
+j. To deploy a copy of this prototype, simply clone this repository or download the ZIP file and deploy the project on a web server (e.g. IIS, Apache). Navigate to index.html to use the prototype. 
 
 k. The prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge using the MIT free software license.
 
