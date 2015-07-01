@@ -7,17 +7,17 @@ This tool allows consumers to search for OTC and prescription drug facts via a s
 
 ## Approach used to create Pool One Design prototype
 
-### U.S. Digital Services Playbook requirements
+### We followed U.S. Digital Services Playbook requirements
 
-1. Assigned one leaderss, gave that person authority and responsibility, and held that person accountable for the quality of the prototype submitted
+a. Assigned one leader, gave that person authority and responsibility, and held that person accountable for the quality of the prototype submitted
     - Ms. Alexa Tsui was the assigned leader (Product Manager) with authority, responsibility and accountability for the quality of the prototype submitted
-2. Assembled a multidisciplinary and collaborative team that includes at a minimum of three of the labor categories  limited to the Design Pool Labor categories to design the prototype as quoted in Attachment C.
+b. Assembled a multidisciplinary and collaborative team that includes at a minimum of three of the labor categories  limited to the Design Pool Labor categories to design the prototype as quoted in Attachment C.
     - The Technik opeFDA design prototype team consisted of three resources assigned to the following Design Pool Labor categories from 18F Agile Labor Categories. Attachment C is updated accordingly.
     - This project was developed and scaled using agile methodologies, since it was a rapid development effort, here are the primary roles as they pertain to our chosen labor categories. 
         - Category 1: Product Manager, responsible for defining and prioritizing the requirements, developing the vision and roadmap and working with Web Designer to optimize our design tools & techniques.  
-        - Category 3: Front End Web Designer, responsible for developing interface experiences for enterprise desktop and mobile applications and improving the look, feel, quality and performance stability. 
-        - Category 6: Interaction Designer/User Researcher/Usability Tester, responsible for creating artifacts such as usability testing plan, testing scripts and usability testing report. Conduct stakeholder interviews, user requirements analysis, conceptual modeling and prototype building. 
-3. Understand what people need, by including people in the prototype design process
+        - Category 3: Interaction Designer/User Researcher/Usability Tester, responsible for creating artifacts such as usability testing plan, testing scripts and usability testing report. Conduct stakeholder interviews, user requirements analysis, conceptual modeling and prototype building. 
+        - Category 6: Front End Web Designer, responsible for developing interface experiences for enterprise desktop and mobile applications and improving the look, feel, quality and performance stability. 
+       c. Understand what people need, by including people in the prototype design process
     - A group of representative users (consumers interested in learning about prescription and OTC drug facts) was assembled and their feedback was used to drive the design of this prototype. Initial interviews identified typical activities that users were interested in performing. Wireframe mockups of the tool were sketched and presented to the users for critique. Users were observed while trying to use the functional prototype and their challenges were translated into enhancements.
 5. Used at least three "human-centered design" techniques or tools
     - The following three human-centered design techniques and tools were used in developing this prototype and a collaborative agile process was implemented to determine user needs:
