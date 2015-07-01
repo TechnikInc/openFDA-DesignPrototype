@@ -42,7 +42,6 @@ f. In addition to openFDA APIs, a number of open source libraries were used to p
 
  - [jQuery](https://jquery.com/) for general JavaScript utilities and
    JSON manipulation
-   
  -  [HTML5   Boilerplate](https://github.com/h5bp/html5-boilerplate) for basic responsive web template 
  - [Bootstrap](http://getbootstrap.com/) for basic web components
  - [Bootstrap-Table](https://github.com/wenzhixin/bootstrap-table) for table generation from JSON data and frozen table headers
@@ -57,5 +56,5 @@ i. This prototype was tested successfully in Windows (Internet Explorer, Chrome,
 
 j. To deploy a copy of this prototype, simply clone this repository or download the ZIP file and deploy the project on a web server (e.g. IIS, Apache). Navigate to index.html to use the prototype.
 
-k The Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge using the MIT free software license.
+k. The prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge using the MIT free software license.
 
