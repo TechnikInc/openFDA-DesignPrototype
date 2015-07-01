@@ -46,8 +46,9 @@ g. Performed usability tests with people
 
 h. Used an iterative approach, where feedback informed subsequent work or versions of the prototype
     - Feedback from the tests led to subsequent work and an updated prototype. (Ex. users told us that they weren't sure if the drug they clicked on was the actual one that they were researching). 
-    - An image gallery that displays product images from Microsoft's Bing search API was implemented to facilitate rapid recognition. This enhancement was introduced to address the user requested enhancement. 
-10. Created a prototype that works on multiple devices, and presents a responsive design
+    - An image gallery that displays product images from Microsoft's Bing search API was implemented to facilitate rapid recognition. This enhancement was introduced to address the user requested enhancement. Used GitHub issues, labels and milestones for collaboration.
+
+i. Created a prototype that works on multiple devices, and presents a responsive design
     - This prototype was tested successfully in Internet Explorer, Chrome and Firefox on Windows, as well as Safari, Chrome and Firefox on Mac OS, and also with Safari on the iPhone and iPad and with Chrome on Android phones and tablets. The prototype uses a responsive layout that reduces the amount of data shown on-screen at a given time on mobile devices.
 
 ## Prototype deployment
