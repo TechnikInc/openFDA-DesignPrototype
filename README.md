@@ -20,10 +20,10 @@ b. Assembled a multidisciplinary and collaborative team that includes at a minim
         - Category 6: Front End Web Designer, responsible for developing interface experiences for enterprise desktop and mobile applications and improving the look, feel, quality and performance stability. 
 
  c. Understand what people need, by including people in the prototype design process
-    - A group of representative users (consumers interested in learning about prescription and OTC drug facts) was assembled and their feedback was used to drive the design of this prototype. Initial interviews identified typical activities that users were interested in performing. Wireframe mockups of the tool were sketched and presented to the users for critique. Users were observed while trying to use the functional prototype and their challenges were translated into enhancements. See "Evidence" folder in the GitHub repository for artifacts.
+ A group of representative users (consumers interested in learning about prescription and OTC drug facts) was assembled and their feedback was used to drive the design of this prototype. Initial interviews identified typical activities that users were interested in performing. Wireframe mockups of the tool were sketched and presented to the users for critique. Users were observed while trying to use the functional prototype and their challenges were translated into enhancements. See "Evidence" folder in the GitHub repository for artifacts.
 
 d. Used at least three "human-centered design" techniques or tools
-    - The following three human-centered design techniques and tools were used in developing this prototype and a collaborative agile process was implemented to determine user needs:
+    - The following three human-centered design techniques and tools were used in developing this prototype and a collaborative agile process was implemented to determine user needs: Artifacts are located in the "Evidence" folder in the GitHub Repository.
     - Conducted user interviews to identify audience personas and representative use cases (contextual inquiry). (artifact-Technik_18F_brainstrom.jpeg)
     - Applied white-boarding and card sorting techniques to identify possible layout and flow approaches. (artifacts-Technik_18F_userstory.docx, Technik_18F_cardeck.jpeg)
     - Used Balsamiq Mockups to create wireframes of web and mobile flows for user review. (artifact-Technik_18F_balsamiq.jpeg)
