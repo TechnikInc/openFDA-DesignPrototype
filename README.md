@@ -55,7 +55,7 @@ i. Created a prototype that works on multiple devices, and presents a responsive
 j. Provided suffient documentation to install and run the their prototype on another machine
 To deploy a copy of this prototype, simply clone this repository or download the ZIP file and deploy the project on a web server (e.g. IIS, Apache). Navigate to index.html to use the tool. 
 
-K. Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
+k. Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
 The Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge.
 
 
