@@ -40,8 +40,7 @@ In addition to openFDA APIs, a number of open source libraries were used to powe
 [Bootstrap-Table](https://github.com/wenzhixin/bootstrap-table) for table generation from JSON data and frozen table headers
 [jQuery Bing Search](http://cbenard.github.io/jquery-bingsearch/) for authenticated Bing image searches using the Windows Azure Marketplace Bing Search API
 
-
-8. Performed usability tests with people
+g. Performed usability tests with people
     - A team of 2 people tested the prototype, validated the acceptance criteria and provided feedback for iteration improvement including enhancement requests.
     - Additionally, an independent group of 5 people not associated the working prototype completed usability tests and provided feedback using a Google questionnaire form by answering 12 questions.
 9. Used an iterative approach, where feedback informed subsequent work or versions of the prototype
