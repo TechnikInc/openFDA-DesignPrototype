@@ -12,7 +12,7 @@ This tool allows consumers to search for OTC and prescription drug facts via a s
 a. Ms. Alexa Tsui was the assigned leader (Product Manager) with authority, responsibility and accountability for the quality of the prototype submitted.
 
 b. The Technik openFDA design prototype team consisted of three resources assigned to the following Design Pool Labor categories from 18F Agile Labor Categories. Attachment C is updated accordingly. 
-– This rapid development effort project was developed and scaled using agile methodologies. The primary roles as they pertain to our chosen labor categories are as follows: 
+This rapid development effort project was developed and scaled using agile methodologies. The primary roles as they pertain to our chosen labor categories are as follows: 
 - Category 1: Product Manager, responsible for defining and prioritizing the requirements, developing the vision and roadmap and working with Web Designer to optimize our design tools & techniques.
 - Category 3: Interaction Designer/User Researcher/Usability Tester, responsible for creating artifacts such as usability testing plan, testing scripts and usability testing report. Conduct stakeholder interviews, user requirements analysis, conceptual modeling and prototype building. 
 - Category 6: Front End Web Designer, responsible for developing interface experiences for enterprise desktop and mobile applications and improving the look, feel, quality and performance stability.
