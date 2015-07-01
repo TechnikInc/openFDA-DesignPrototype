@@ -42,8 +42,9 @@ In addition to openFDA APIs, a number of open source libraries were used to powe
 
 g. Performed usability tests with people
     - A team of 2 people tested the prototype, validated the acceptance criteria and provided feedback for iteration improvement including enhancement requests.
-    - Additionally, an independent group of 5 people not associated the working prototype completed usability tests and provided feedback using a Google questionnaire form by answering 12 questions.
-9. Used an iterative approach, where feedback informed subsequent work or versions of the prototype
+    - Additionally, an independent group of 5 people not associated the working prototype completed usability tests and provided feedback using a Google questionnaire form by answering 12 questions. (artifact -Technik_18F_SystemUsability_Responses). See artifact in the "evidence folder" in the GitHub repository.
+
+h. Used an iterative approach, where feedback informed subsequent work or versions of the prototype
     - Feedback from the tests led to subsequent work and an updated prototype. (Ex. users told us that they weren't sure if the drug they clicked on was the actual one that they were researching). 
     - An image gallery that displays product images from Microsoft's Bing search API was implemented to facilitate rapid recognition. This enhancement was introduced to address the user requested enhancement. 
 10. Created a prototype that works on multiple devices, and presents a responsive design
