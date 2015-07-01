@@ -36,10 +36,9 @@ d. The following three human-centered design techniques and tools were used in d
 - Used Balsamiq Mockups to create wireframes of web and mobile flows for user review. (artifact-Technik_18F_balsamiq.jpeg) 
 - Performed usability testing with rapid iteration of working prototypes, adding and validating enhancements requested by users. (artifact-Technik_18F_testinglog.xls), (artifact-Technik_18F_SystemUsability_Responses.xls)
 
-e. Standard, responsive components and layouts from the Bootstrap UI library were used to create the interface
+e. Standard, responsive components and layouts from the Bootstrap UI library were used to create the interface.
 
-f. In addition to openFDA APIs, a number of open source libraries were used to power this prototype.
-
+f. In addition to openFDA APIs, several open source libraries were used to power this prototype.
  - [jQuery](https://jquery.com/) for general JavaScript utilities and
    JSON manipulation
  -  [HTML5   Boilerplate](https://github.com/h5bp/html5-boilerplate) for basic responsive web template 
