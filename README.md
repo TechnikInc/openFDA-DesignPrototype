@@ -34,7 +34,7 @@ d. The following three human-centered design techniques and tools were used in d
 - Conducted user interviews to identify audience personas and representative use cases (contextual inquiry). (artifact-Technik_18F_brainstrom.jpeg) 
 - Applied white-boarding and card sorting techniques to identify possible layout/flow approaches. (artifacts-Technik_18F_userstory.docx, Technik_18F_cardeck.jpeg) 
 - Used Balsamiq Mockups to create wireframes of web and mobile flows for user review. (artifact-Technik_18F_balsamiq.jpeg) 
-- Performed usability testing with rapid iteration of working prototypes, adding and validating enhancements requested by users. (artifact-Technik_18F_testinglog.xls), (artifact-Technik_18F_SystemUsability_Responses.xls)Created or used a design style guide and/or a pattern library
+- Performed usability testing with rapid iteration of working prototypes, adding and validating enhancements requested by users. (artifact-Technik_18F_testinglog.xls), (artifact-Technik_18F_SystemUsability_Responses.xls)
 
 e. Standard, responsive components and layouts from the Bootstrap UI library were used to create the interface
 
