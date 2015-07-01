@@ -19,7 +19,7 @@ b. Assembled a multidisciplinary and collaborative team that includes at a minim
         - Category 3: Interaction Designer/User Researcher/Usability Tester, responsible for creating artifacts such as usability testing plan, testing scripts and usability testing report. Conduct stakeholder interviews, user requirements analysis, conceptual modeling and prototype building. 
         - Category 6: Front End Web Designer, responsible for developing interface experiences for enterprise desktop and mobile applications and improving the look, feel, quality and performance stability. 
 
-       c. Understand what people need, by including people in the prototype design process
+ c. Understand what people need, by including people in the prototype design process
     - A group of representative users (consumers interested in learning about prescription and OTC drug facts) was assembled and their feedback was used to drive the design of this prototype. Initial interviews identified typical activities that users were interested in performing. Wireframe mockups of the tool were sketched and presented to the users for critique. Users were observed while trying to use the functional prototype and their challenges were translated into enhancements. See "Evidence" folder in the GitHub repository for artifacts.
 
 d. Used at least three "human-centered design" techniques or tools
