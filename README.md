@@ -20,14 +20,11 @@ This rapid development effort project was developed and scaled using agile metho
 
 c. A group of representative users was assembled and their feedback was used to drive the design of this prototype. Initial interviews identified typical activities that users were interested in performing. Wireframe mockups were sketched and presented to the users for critique. Users were observed while trying to use the functional prototype and their challenges were translated into enhancements. See "Evidence" folder in GitHub repository for artifacts.
 
-
-
-
-   
-
-e. Standard, responsive components and layouts from the Bootstrap UI library were used to create the interface.
-
-d. The following three collaborative human-centered design techniques and tools supported the development of this prototype with an agile process to determine user needs: See "Evidence" folder in GitHub Repository for artifacts. - Conducted user interviews to identify audience personas and representative use cases (contextual inquiry). (artifact-Technik_18F_brainstrom.jpeg) - Applied white-boarding and card sorting techniques to identify possible layout/flow approaches. (artifacts-Technik_18F_userstory.docx, Technik_18F_cardeck.jpeg) - Used Balsamiq Mockups to create wireframes of web and mobile flows for user review. (artifact-Technik_18F_balsamiq.jpeg) - Performed usability testing with rapid iteration of working prototypes, adding and validating enhancements requested by users. (artifact-Technik_18F_testinglog.xls), (artifact-Technik_18F_SystemUsability_Responses.xls)
+d. The following three collaborative human-centered design techniques and tools supported the development of this prototype with an agile process to determine user needs: See "Evidence" folder in GitHub Repository for artifacts. 
+- Conducted user interviews to identify audience personas and representative use cases (contextual inquiry). (artifact-Technik_18F_brainstrom.jpeg) 
+-  Applied white-boarding and card sorting techniques to identify possible layout/flow approaches. (artifacts-Technik_18F_userstory.docx, Technik_18F_cardeck.jpeg) 
+-  Used Balsamiq Mockups to create wireframes of web and mobile flows for user review. (artifact-Technik_18F_balsamiq.jpeg) 
+- Performed usability testing with rapid iteration of working prototypes, adding and validating enhancements requested by users. (artifact-Technik_18F_testinglog.xls), (artifact-Technik_18F_SystemUsability_Responses.xls)
 
 e. Standard, responsive components and layouts from the Bootstrap UI library were used to create the interface
 
