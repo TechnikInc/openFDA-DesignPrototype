@@ -48,7 +48,8 @@ f. In addition to openFDA APIs, a number of open source libraries were used to p
  - [Bootstrap-Table](https://github.com/wenzhixin/bootstrap-table) for table generation from JSON data and frozen table headers
  - [jQuery Bing Search](http://cbenard.github.io/jquery-bingsearch/) for authenticated Bing image searches using the Windows Azure Marketplace Bing Search API
 
-g. A team of 2 people tested the prototype, validated the acceptance criteria and provided feedback for iteration improvement including enhancement requests. - Additionally, an independent group of 5 people not associated the working prototype completed usability tests and provided feedback using a Google questionnaire form by answering 12 questions. (artifact -Technik_18F_SystemUsability_Responses). See artifact in the "evidence folder" in the GitHub repository.
+g. A team of 2 people tested the prototype, validated the acceptance criteria and provided feedback for iteration improvement including enhancement requests. 
+Additionally, an independent group of 5 people not associated the working prototype completed usability tests and provided feedback using a Google questionnaire form by answering 12 questions. (artifact -Technik_18F_SystemUsability_Responses). See artifact in the "evidence folder" in the GitHub repository.
 
 h. Feedback from the tests led to subsequent work and an updated prototype. (Ex. users told us that they weren't sure if the drug they clicked on was the actual one that they were researching). - An image gallery that displays product images from Microsoft's Bing search API was implemented to facilitate rapid recognition. This enhancement was introduced to address the user requested enhancement. Used GitHub issues, labels and milestones for collaboration.
 
