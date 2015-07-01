@@ -18,9 +18,11 @@ b. Assembled a multidisciplinary and collaborative team that includes at a minim
         - Category 1: Product Manager, responsible for defining and prioritizing the requirements, developing the vision and roadmap and working with Web Designer to optimize our design tools & techniques.  
         - Category 3: Interaction Designer/User Researcher/Usability Tester, responsible for creating artifacts such as usability testing plan, testing scripts and usability testing report. Conduct stakeholder interviews, user requirements analysis, conceptual modeling and prototype building. 
         - Category 6: Front End Web Designer, responsible for developing interface experiences for enterprise desktop and mobile applications and improving the look, feel, quality and performance stability. 
+
        c. Understand what people need, by including people in the prototype design process
-    - A group of representative users (consumers interested in learning about prescription and OTC drug facts) was assembled and their feedback was used to drive the design of this prototype. Initial interviews identified typical activities that users were interested in performing. Wireframe mockups of the tool were sketched and presented to the users for critique. Users were observed while trying to use the functional prototype and their challenges were translated into enhancements.
-5. Used at least three "human-centered design" techniques or tools
+    - A group of representative users (consumers interested in learning about prescription and OTC drug facts) was assembled and their feedback was used to drive the design of this prototype. Initial interviews identified typical activities that users were interested in performing. Wireframe mockups of the tool were sketched and presented to the users for critique. Users were observed while trying to use the functional prototype and their challenges were translated into enhancements. See "Evidence" folder in the GitHub repository for artifacts.
+
+d. Used at least three "human-centered design" techniques or tools
     - The following three human-centered design techniques and tools were used in developing this prototype and a collaborative agile process was implemented to determine user needs:
     - Conducted user interviews to identify audience personas and representative use cases (contextual inquiry). (artifact-Technik_18F_brainstrom.jpeg)
     - Applied white-boarding and card sorting techniques to identify possible layout and flow approaches. (artifacts-Technik_18F_userstory.docx, Technik_18F_cardeck.jpeg)
