@@ -33,11 +33,14 @@ e. Created or used a design style guide and/or a pattern library
     - Standard, responsive components and layouts from the Bootstrap UI library were used to create the interface
 
 f. Used at least three modern and open-source frontend or client-side web technologies
-    - [jQuery](https://jquery.com/) for general JavaScript utilities and JSON manipulation
-    - [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) for basic, responsive web template
-    - [Bootstrap](http://getbootstrap.com/) for basic web components
-    - [Bootstrap-Table](https://github.com/wenzhixin/bootstrap-table) for table generation from JSON data and frozen table headers
-    - [jQuery Bing Search](http://cbenard.github.io/jquery-bingsearch/) for authenticated Bing image searches using the Windows Azure Marketplace Bing Search API
+In addition to openFDA APIs, a number of open source libraries were used to power this prototype.
+[jQuery](https://jquery.com/) for general JavaScript utilities and JSON manipulation
+[HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) for basic, responsive web template
+[Bootstrap](http://getbootstrap.com/) for basic web components
+[Bootstrap-Table](https://github.com/wenzhixin/bootstrap-table) for table generation from JSON data and frozen table headers
+[jQuery Bing Search](http://cbenard.github.io/jquery-bingsearch/) for authenticated Bing image searches using the Windows Azure Marketplace Bing Search API
+
+
 8. Performed usability tests with people
     - A team of 2 people tested the prototype, validated the acceptance criteria and provided feedback for iteration improvement including enhancement requests.
     - Additionally, an independent group of 5 people not associated the working prototype completed usability tests and provided feedback using a Google questionnaire form by answering 12 questions.
