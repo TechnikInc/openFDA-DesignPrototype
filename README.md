@@ -11,6 +11,7 @@ This tool allows consumers to search for OTC and prescription drug facts via a s
 
 a. Assigned one leader, gave that person authority and responsibility, and held that person accountable for the quality of the prototype submitted
     - Ms. Alexa Tsui was the assigned leader (Product Manager) with authority, responsibility and accountability for the quality of the prototype submitted
+
 b. Assembled a multidisciplinary and collaborative team that includes at a minimum of three of the labor categories  limited to the Design Pool Labor categories to design the prototype as quoted in Attachment C.
     - The Technik opeFDA design prototype team consisted of three resources assigned to the following Design Pool Labor categories from 18F Agile Labor Categories. Attachment C is updated accordingly.
     - This project was developed and scaled using agile methodologies, since it was a rapid development effort, here are the primary roles as they pertain to our chosen labor categories. 
