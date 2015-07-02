@@ -40,7 +40,7 @@ f. In addition to openFDA APIs, several open source libraries were used to power
 g. Two people tested the prototype, validated the acceptance criteria and provided feedback for improvement. 
 An independent group not associated with prototype development completed usability tests and provided feedback. (artifact -Technik_18F_SystemUsability_Responses). See artifact in the "evidence folder" in GitHub repository.
 
-h. Feedback from the tests led to subsequent work and an updated prototype. (Ex. users requested visual images for search results). - A gallery that displays product images from Microsoft's Bing search API was implemented to facilitate rapid recognition. Used GitHub issues, labels and milestones for collaboration.
+h. Feedback from the tests led to subsequent work and an updated prototype. (Ex. users requested visual images for search results). - A gallery that displays product images from Microsoft's Bing search API was implemented to facilitate rapid recognition. Used GitHub issues, labels and milestones for collaboration. Issues are automatically synced with [Waffle.io](https://waffle.io/) Agile boards.
  
 i. This prototype was tested successfully in Windows (Internet Explorer, Chrome, Firefox), Mac OS (Safari, Chrome, Firefox), and on the iPhone and iPad (Safari) and on Android phones and tablets (Chrome). The prototype uses a responsive layout that reduces the amount of data shown on-screen at a given time on mobile devices. (artifacts - Technik_18F_Iphone.jpeg, Technik_18F_android.jpeg, Technik_18F_IE.jpeg, Technik_18F_Chrome.jpeg, Technik_18F_Firefox.jpeg)
  
